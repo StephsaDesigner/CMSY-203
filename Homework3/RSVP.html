@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>RSVP</title>
+</head>
+
+<body>
+	<h1>Invitation</h1>
+
+	<p>You are cordially invited to attend the celebration of the Anderson’s 50th wedding anniversary on October 15 at 8:00 p.m.</p> 
+    
+    <form action="SendRSVP.php" method="get">
+		<h2>RSVP</h2>
+		<p>Name &nbsp; <input type="text" name="name" size="50" /></p> 
+        <p><input type="radio" name="attendance" value="yes" />I will attend &nbsp; 
+        <input type="radio" name="attendance" value="no" />I will NOT attend &nbsp;</p>
+		<p>Number of guests besides myself &nbsp; <input type="text” name= “guests" /></p>
+		<p><input type="submit" value="Send RSVP" /><input type="reset" /></p>
+     </form>
+	<p><a href="attending.php">See Who’s Attending</a><br />
+    	<a href="notattending.php">See Who's not Attending</a></p>
+
+
+</body>
+</html>
