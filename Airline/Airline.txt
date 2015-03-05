@@ -1,0 +1,28 @@
+create database flightlog;
+
+use flightlog;
+
+create table flightsessions
+(
+flightid int not null auto_increment,
+flight_date date,
+flight_time time,
+origin varchar(50),
+destination varchar(50),
+weather varchar(50),
+winds varchar(50),
+temp int,
+primary key  (flightid)
+);
+
+insert into flightsessions values (null, '2007-02-15', '01:50:00', 'Lake Tahoe', 'Sonoma', 'Partly Cloudly', 'E 10 mph', 59);
+
+insert into flightsessions values (null, '2007-02-18', '00:45:00', 'Sonoma', 'Sonoma', 'Sunny', 'Calm', 60);
+
+insert into flightsessions values (null, '2007-02-22', '01:20:00', 'Sonoma', 'Redwood Shores', 'Mostly Cloudly', 'S 5 mph', 55);
+
+insert into flightsessions values (null, '2007-02-22', '01:10:00', 'Redwood Shores', 'Sonoma', 'Mostly Cloudly', 'S 8 mph', 57);
+
+insert into flightsessions values (null, '2007-02-28', '02:50:00', 'Sonoma', 'San Luis Obispo', 'Sunny', 'Calm', 72);
+
+insert into flightsessions values (null, '2007-02-28', '02:45:00', 'San Luis Obispo', 'Sonoma', 'Sunny', 'Calm', 72);
